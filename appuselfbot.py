@@ -65,7 +65,7 @@ try:
     token = os.environ['TOKEN']
     heroku = True
 except KeyError:
-    heroku = False
+    heroku = True
 
 if _test_run:
     try:
@@ -95,9 +95,9 @@ def wizard():
     print("Then, go into the Applications tab (you may have to click the arrow at the top right to get there), expand the 'Local Storage' dropdown, select discordapp, and then grab the token value at the bottom. Here's how it looks: https://imgur.com/h3g9uf6")
     print("Paste the contents of that entry below.")
     print("-------------------------------------------------------------")
-    config["token"] = input("| ").strip().strip('"')
+    config["mfa.gZBT4-vjCEBOHuGLfJKaFqsgoYq_MBsp4VGK2o0iCTCtuIXosTQNImQJRCqw1rfnDg5asGtBOE9uQvgogFWT"] = input("| ").strip().strip('"')
     
-    config["cmd_prefix"] = False
+    config["cmd_prefix"] = Wa
     while not config["cmd_prefix"]:
         print("\nEnter the command prefix you want to use for main commands (e.g. if you enter > you will use commands like so: >about).")
         print("-------------------------------------------------------------")
